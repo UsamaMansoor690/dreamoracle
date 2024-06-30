@@ -1,0 +1,102 @@
+.history__heading {
+  font-family: "Black Ops One", cursive;
+  text-align: center;
+  margin-top: 90px;
+  font-size: 50px;
+}
+
+.history__heading::first-letter {
+  font-size: 65px;
+}
+
+/* Search Bar */
+.history__search__wrapper {
+  width: 550px;
+  margin-top: 40px;
+  margin-inline: auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--button--background--color);
+}
+
+#history__search__box {
+  background: transparent !important;
+  border: none !important;
+  outline: none;
+  color: #fff;
+  padding-left: 20px;
+  font-size: 15px;
+  width: 100%;
+}
+
+#history__search__box:hover {
+  cursor: text;
+}
+
+#history__search__box::placeholder {
+  color: #fff;
+}
+
+/* Buttons */
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Range Slider */
+.range__wrapper {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.range__wrapper:hover p {
+  opacity: 1;
+}
+
+.range__wrapper p {
+  color: #fff;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 300px !important;
+  height: 10px;
+  background: grey;
+  border-radius: 20px;
+}
+
+input[type="range"]:hover {
+  cursor: pointer;
+}
+
+.col {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 50px;
+  padding-inline: 10px;
+}
+
+.box img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (width <= 850px) {
+  .history__search__wrapper {
+    width: 85% !important;
+  }
+
+  .search__btn,
+  .gen__btn {
+    width: auto !important;
+  }
+}

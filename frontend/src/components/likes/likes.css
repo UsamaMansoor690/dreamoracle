@@ -1,0 +1,50 @@
+.likes__heading {
+  font-family: "Black Ops One", cursive;
+  text-align: center;
+  margin-top: 90px;
+  font-size: 50px;
+}
+
+.likes__heading::first-letter {
+  font-size: 65px;
+}
+
+/* Range Slider */
+.like__range__wrapper {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.like__range__wrapper:hover p {
+  opacity: 1;
+}
+
+.like__range__wrapper p {
+  color: #fff;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 300px !important;
+  height: 10px;
+  background: grey;
+  border-radius: 20px;
+}
+
+input[type="range"]:hover {
+  cursor: pointer;
+}
+
+.col {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 50px;
+  padding-inline: 10px;
+}
+
+.box img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}

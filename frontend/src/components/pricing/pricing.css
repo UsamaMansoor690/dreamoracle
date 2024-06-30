@@ -1,0 +1,124 @@
+.pricing {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  /* background: #fff; */
+}
+
+.pricingHeading {
+  font-size: 30px;
+  text-align: center;
+  color: var(--primary--background--color);
+}
+
+.pricingText {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--primary--background--color);
+}
+
+.pricingText strong {
+  font-size: 25px;
+  color: var(--primary--background--color);
+}
+
+/* Cards */
+.pricing-card-container {
+  text-align: center;
+  padding: 80px 0px;
+  margin: 50px 0px;
+  border-radius: 20px;
+  background: rgb(250, 250, 250);
+  box-shadow: 4px 6px 10px -3px rgba(126, 125, 125, 0.7);
+}
+
+.type {
+  font-size: 18px;
+  color: var(--primary--background--color);
+  margin-bottom: 8px;
+}
+
+.pkg-price {
+  font-size: 70px;
+  color: var(--primary--background--color);
+}
+
+sup {
+  font-size: 24px;
+}
+
+.offer {
+  font: 18px;
+  margin: 0px 0px 16px;
+  color: var(--primary--background--color);
+}
+
+.price-btn {
+  font-size: 18px;
+  font-weight: 500;
+  width: 80%;
+  padding: 10px 42px;
+  margin-top: 20px;
+  background: transparent;
+  border-radius: 50px;
+  color: var(--button--background--color);
+  border: 1px solid var(--button--background--color);
+  transition: background-color 0.4s ease;
+}
+
+.price-btn:hover {
+  color: #fff;
+  background-color: var(--button--background--color);
+}
+
+.premium {
+  color: #fff;
+  background: var(--button--background--color);
+  box-shadow: none;
+}
+
+.t {
+  color: #fff;
+}
+
+.btn2 {
+  background: #fff;
+  color: var(--button--background--color);
+}
+
+.btn2:hover {
+  background: #fff;
+  color: var(--button--background--color);
+}
+
+/* Media Screens for Medium Screens (Tablet) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .pricing-card-container {
+    width: 90%;
+    margin: 16px auto;
+  }
+
+  .pricingText {
+    font-size: 14px;
+  }
+
+  .pricingText strong {
+    font-size: 14px;
+  }
+}
+
+/* Media Screen for Small Screen (Phone) */
+@media screen and (width < 481px) {
+  .pricing-card-container {
+    width: 70%;
+    margin: 16px auto;
+  }
+
+  .pricingText {
+    font-size: 14px;
+  }
+
+  .pricingText strong {
+    font-size: 14px;
+  }
+}

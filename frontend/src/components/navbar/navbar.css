@@ -1,0 +1,93 @@
+/* Main list that contain everything inside the Navbar */
+.main__list {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 16px;
+  list-style: none;
+  background-color: #000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Logo */
+.first__name {
+  font-family: "Black Ops One", cursive;
+  font-size: 17px;
+}
+
+.first__name:hover {
+  cursor: pointer;
+}
+
+/* Links  */
+.main__list .links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* a tag inside the links list */
+.links li a {
+  text-decoration: none;
+  color: var(--primary--background--color);
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.links li a:hover {
+  color: var(--primary--text--color);
+  font-weight: 500;
+  background-color: var(--primary--background--color);
+}
+
+.links li a:focus {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 14px;
+  background-color: var(--primary--background--color);
+}
+
+.btn_and_profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sign__in__btn {
+  background: var(--button--background--color);
+  color: var(--primary--text--color);
+  font-size: 16px;
+  border: none;
+  padding: 8px 26px;
+  border-radius: 4px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.sign__in__btn:hover {
+  background: #4e1a68;
+  animation: glow 1s infinite;
+}
+
+/* Animation Keyframe for Glowing Effect on Buttons Hover */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px var(--button--background--color);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--button--background--color);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--button--background--color);
+  }
+}
+
+@media screen and (width <= 653px) {
+  .main__list .links {
+    display: none;
+  }
+}

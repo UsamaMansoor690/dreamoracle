@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary--background--color: #666;
+  --primary--text--color: #fff;
+  --button--background--color: #9932cc;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--button--background--color);
+  border-radius: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: var(--primary--background--color);
+  color: var(--primary--text--color);
+  display: block !important;
+}
+
+.main__div {
+  outline: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.routes__container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  position: sticky;
+  bottom: 0;
+  display: none;
+}
+
+@media screen and (width <= 653px) {
+  .footer {
+    display: block;
+  }
+}

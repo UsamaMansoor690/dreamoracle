@@ -1,0 +1,213 @@
+.heading {
+  font-family: "Black Ops One", cursive;
+  text-align: center;
+  margin-top: 90px;
+  font-size: 50px;
+}
+
+.heading::first-letter {
+  font-size: 65px;
+}
+
+/* Search Bar */
+.home__search__bar {
+  width: 550px;
+  margin-top: 40px;
+  margin-inline: auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--button--background--color);
+}
+
+#home__search {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding-left: 20px;
+  font-size: 15px;
+  width: 100%;
+}
+
+#home__search:hover {
+  cursor: text;
+}
+
+#home__search::placeholder {
+  color: #fff;
+}
+
+/* Buttons */
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.search__btn {
+  border-radius: 20px !important;
+  width: 160px !important;
+  border: 2px solid var(--button--background--color) !important;
+}
+
+.gen__btn {
+  border-radius: 20px !important;
+  width: 160px !important;
+  background: transparent !important;
+  border: 2px solid var(--button--background--color) !important;
+}
+
+/* Range Slider */
+.range__wrapper {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.range__wrapper:hover p {
+  opacity: 1;
+}
+
+.range__wrapper p {
+  color: #fff;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 300px !important;
+  height: 10px;
+  background: grey;
+  border-radius: 20px;
+}
+
+input[type="range"]:hover {
+  cursor: pointer;
+}
+
+.col {
+  display: grid;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-inline: 10px;
+}
+
+/* Image container */
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.box:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.box:hover img {
+  mask: linear-gradient(180deg, transparent, white 50%, transparent);
+}
+
+.box:hover .content__wrapper {
+  display: flex;
+}
+
+.box:hover .icons__wrapper {
+  display: block;
+}
+
+/* Text that appers on image (User-Prompt) */
+.images__prompt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-inline: 14px;
+}
+
+/* Content of images that appears on image hover */
+.icons__wrapper {
+  position: absolute;
+  width: 100%;
+  display: none;
+  z-index: 3000;
+}
+
+/* Text Wrapper */
+.content__wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  border-radius: 10px;
+}
+
+.content__wrapper .images__prompt {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.icons__wrapper .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-inline: 10px;
+}
+
+.icons__wrapper .icons span {
+  border: 1px solid var(--button--background--color);
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--button--background--color);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.icons__wrapper .icons span:hover {
+  opacity: 1;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (width <= 850px) {
+  .home__search__bar {
+    width: 85%;
+  }
+
+  .heading {
+    font-size: 35px;
+  }
+
+  .heading::first-letter {
+    font-size: 40px;
+  }
+
+  #col__range {
+    width: 70%;
+  }
+
+  .search__btn,
+  .gen__btn {
+    width: auto !important;
+  }
+
+  .icons__wrapper .icons {
+    align-items: center;
+  }
+
+  .icons__wrapper .icons span {
+    padding: 5px;
+  }
+
+  .content__wrapper .images__prompt {
+    display: none;
+  }
+}
